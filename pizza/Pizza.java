@@ -4,7 +4,7 @@ import java.util.List;
 
 public final class Pizza {
     public enum Size { SMALL, MEDIUM, LARGE }
-    public enum Crust { THIN, DEEP_DISH }
+    public enum Crust { THIN, THICK, STUFFED }
     public enum Sauce { TOMATO, GARLIC }
 
     private final Size size;

@@ -13,12 +13,12 @@ public class Main {
                 .setCheese("Goat Cheese")
                 .addTopping("Spinach")
                 .build();
-        System.out.println("Custom Pizza: " + custom);
+        System.out.println("Custom Thin Pizza: " + custom);
 
-        try {
-            new DeepPizzaBuilder().setSize(Pizza.Size.MEDIUM).build();
-        } catch (IllegalStateException e) {
-            System.out.println("Validation caught: " + e.getMessage());
-        }
+        Pizza deepDish = new DeepPizzaBuilder()
+                .setSize(Pizza.Size.LARGE)
+                .addTopping("Pepperoni")
+                .build();
+        System.out.println("Custom Deep Dish: " + deepDish);
     }
 }
